@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+<body>
+    <h1>CURSO NODE - PROJETO AULA CONVERSÃO DE ARQUIVOS</h1>
+    <H3>Tharsis Soares</H3>
+    <hr>
+    <table>
+        <thead>
+            <% header.forEach(col => { %>
+                <th> <%= col %> </th>
+            <% }) %>
+        </thead>
+        <tbody>
+            <% rows.forEach(row => { %> 
+                <tr>
+                    <% row.forEach(element => { %>
+                        <td><%= element %></td>
+                    <% }) %>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>
